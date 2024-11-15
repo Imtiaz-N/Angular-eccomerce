@@ -1,0 +1,74 @@
+<div
+  class="login-container max-w-sm mx-auto p-6 bg-white rounded-lg shadow-md mt-28"
+>
+  <h2 class="text-2xl text-center font-sans mb-6">Login</h2>
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="form-group mb-4">
+      <label for="email" class="block text-sm font-medium text-gray-700"
+        >Email</label
+      >
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
+      />
+      <div
+        *ngIf="
+          loginForm.get('email')?.invalid && loginForm.get('email')?.touched
+        "
+        class="mt-1 text-red-500 text-sm"
+      >
+        <small *ngIf="loginForm.get('email')?.errors?.['required']"
+          >Email is required</small
+        >
+        <small *ngIf="loginForm.get('email')?.errors?.['email']"
+          >Enter a valid email</small
+        >
+      </div>
+    </div>
+
+    <div class="form-group mb-6">
+      <label for="password" class="block text-sm font-medium text-gray-700"
+        >Password</label
+      >
+      <input
+        id="password"
+        type="password"
+        formControlName="password"
+        class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm px-3 py-2 focus:outline-none focus:ring focus:ring-blue-500 focus:border-blue-500"
+      />
+      <div
+        *ngIf="
+          loginForm.get('password')?.invalid &&
+          loginForm.get('password')?.touched
+        "
+        class="mt-1 text-red-500 text-sm"
+      >
+        <small *ngIf="loginForm.get('password')?.errors?.['required']"
+          >Password is required</small
+        >
+        <small *ngIf="loginForm.get('password')?.errors?.['minlength']"
+          >Password must be at least 6 characters</small
+        >
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      [disabled]="loginForm.invalid"
+      class="w-full bg-blue-500 text-white font-bold py-2 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 disabled:opacity-50"
+    >
+      Login
+    </button>
+  </form>
+
+  <div class="mt-4 text-center">
+    <p class="text-sm text-gray-600">
+      Don't have an account?
+      <a (click)="goToSignUp()" class="text-blue-500 hover:underline ml-4">
+        Sign Up
+      </a>
+    </p>
+  </div>
+</div>

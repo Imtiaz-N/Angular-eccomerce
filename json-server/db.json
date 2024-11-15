@@ -1,0 +1,367 @@
+{
+  "users": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "products": [
+        {
+          "id": 1,
+          "name": "SM900 White Wired Gamming Mouse",
+          "description": "SM900 White Wired Gaming Mouse with Honeycomb Shell,12800 DPI,7 Programmable Buttons,Lightweight Gaming Mice Ergonomic Computer Wired Mouse Gaming for Win/PC/Mac/Laptop Gamer",
+          "price": 19,
+          "image": "/images/mouse-1.webp"
+        },
+        {
+          "id": 2,
+          "name": "SM600 White Wireless Gaming Mouse",
+          "description": "SM600 White Wireless Gaming Mouse,8000 DPI Tri-Modes BT5.1/Type-C Wired/2.4G Wireless Mouse with 2 Side Buttons, Programmable Macro Gamer Mouse with RGB Light for Laptop/PC/Mac",
+          "price": 26,
+          "image": "/images/mouse-3.webp"
+        },
+        {
+          "id": 3,
+          "name": "Razer Basilisk V3 Customizable Ergonomic Gaming Mouse",
+          "description": "Razer Basilisk V3 Customizable Ergonomic Gaming Mouse: Fastest Gaming Mouse Switch - Chroma RGB Lighting - 26K DPI Optical Sensor - 11 Programmable Buttons - HyperScroll Tilt Wheel - Classic Black",
+          "price": 49,
+          "image": "/images/mouse-2.webp"
+        },
+        {
+          "id": 4,
+          "name": "HP 14 Laptop, Intel Celeron N4020",
+          "description": "HP 14 Laptop, Intel Celeron N4020, 4 GB RAM, 64 GB Storage, 14-inch Micro-edge HD Display, Windows 11 Home, Thin & Portable, 4K Graphics, One Year of Microsoft 365 (14-dq0040nr, Snowflake White)",
+          "price": 178,
+          "image": "/images/laptop-3.webp"
+        },
+        {
+          "id": 5,
+          "name": "Acer Aspire 3 A315-24P-R7VH Slim Laptop",
+          "description": "Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6\" Full HD IPS Display | AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode",
+          "price": 279,
+          "image": "/images/laptop-1.webp"
+        },
+        {
+          "id": 6,
+          "name": "HP Newest 14\"",
+          "description": "HP Newest 14\" Ultral Light Laptop for Students and Business, Intel Quad-Core N4120, 8GB RAM, 192GB Storage(64GB eMMC+128GB Micro SD), 1 Year Office 365, Webcam, HDMI, WiFi, USB-A&C, Win 11 S",
+          "price": 212,
+          "image": "/images/laptop-2.webp"
+        },
+        {
+          "id": 7,
+          "name": "MSI PRO MP251 E2",
+          "description": "MSI PRO MP251 E2 24.5-inch IPS 1920 x 1080 (FHD) Gaming Office Monitor, 120Hz, Adaptive-Synch, HDR Ready, HDMI, VGA Port, Display Port,VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 109,
+          "image": "/assets/images/monitor-1.webp"
+        },
+        {
+          "id": 8,
+          "name": "MSI PRO MP253",
+          "description": "MSI PRO MP253 24.5-inch IPS 1920 x 1080 (FHD) Computer Monitor, 100Hz, Adaptive-Sync, HDMI, DP Port, VGA Port, VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 90,
+          "image": "/assets/images/monitor-2.webp"
+        },
+        {
+          "id": 1,
+          "name": "SM900 White Wired Gamming Mouse",
+          "description": "SM900 White Wired Gaming Mouse with Honeycomb Shell,12800 DPI,7 Programmable Buttons,Lightweight Gaming Mice Ergonomic Computer Wired Mouse Gaming for Win/PC/Mac/Laptop Gamer",
+          "price": 19,
+          "image": "/images/mouse-1.webp"
+        },
+        {
+          "id": 2,
+          "name": "SM600 White Wireless Gaming Mouse",
+          "description": "SM600 White Wireless Gaming Mouse,8000 DPI Tri-Modes BT5.1/Type-C Wired/2.4G Wireless Mouse with 2 Side Buttons, Programmable Macro Gamer Mouse with RGB Light for Laptop/PC/Mac",
+          "price": 26,
+          "image": "/images/mouse-3.webp"
+        },
+        {
+          "id": 3,
+          "name": "Razer Basilisk V3 Customizable Ergonomic Gaming Mouse",
+          "description": "Razer Basilisk V3 Customizable Ergonomic Gaming Mouse: Fastest Gaming Mouse Switch - Chroma RGB Lighting - 26K DPI Optical Sensor - 11 Programmable Buttons - HyperScroll Tilt Wheel - Classic Black",
+          "price": 49,
+          "image": "/images/mouse-2.webp"
+        },
+        {
+          "id": 4,
+          "name": "HP 14 Laptop, Intel Celeron N4020",
+          "description": "HP 14 Laptop, Intel Celeron N4020, 4 GB RAM, 64 GB Storage, 14-inch Micro-edge HD Display, Windows 11 Home, Thin & Portable, 4K Graphics, One Year of Microsoft 365 (14-dq0040nr, Snowflake White)",
+          "price": 178,
+          "image": "/images/laptop-3.webp"
+        },
+        {
+          "id": 5,
+          "name": "Acer Aspire 3 A315-24P-R7VH Slim Laptop",
+          "description": "Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6\" Full HD IPS Display | AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode",
+          "price": 279,
+          "image": "/images/laptop-1.webp"
+        },
+        {
+          "id": 6,
+          "name": "HP Newest 14\"",
+          "description": "HP Newest 14\" Ultral Light Laptop for Students and Business, Intel Quad-Core N4120, 8GB RAM, 192GB Storage(64GB eMMC+128GB Micro SD), 1 Year Office 365, Webcam, HDMI, WiFi, USB-A&C, Win 11 S",
+          "price": 212,
+          "image": "/images/laptop-2.webp"
+        },
+        {
+          "id": 7,
+          "name": "MSI PRO MP251 E2",
+          "description": "MSI PRO MP251 E2 24.5-inch IPS 1920 x 1080 (FHD) Gaming Office Monitor, 120Hz, Adaptive-Synch, HDR Ready, HDMI, VGA Port, Display Port,VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 109,
+          "image": "/assets/images/monitor-1.webp"
+        },
+        {
+          "id": 8,
+          "name": "MSI PRO MP253",
+          "description": "MSI PRO MP253 24.5-inch IPS 1920 x 1080 (FHD) Computer Monitor, 100Hz, Adaptive-Sync, HDMI, DP Port, VGA Port, VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 90,
+          "image": "/assets/images/monitor-2.webp"
+        },
+        {
+          "id": 5,
+          "name": "Acer Aspire 3 A315-24P-R7VH Slim Laptop",
+          "description": "Acer Aspire 3 A315-24P-R7VH Slim Laptop | 15.6\" Full HD IPS Display | AMD Ryzen 3 7320U Quad-Core Processor | AMD Radeon Graphics | 8GB LPDDR5 | 128GB NVMe SSD | Wi-Fi 6 | Windows 11 Home in S Mode",
+          "price": 279,
+          "image": "/images/laptop-1.webp"
+        },
+        {
+          "id": 6,
+          "name": "HP Newest 14\"",
+          "description": "HP Newest 14\" Ultral Light Laptop for Students and Business, Intel Quad-Core N4120, 8GB RAM, 192GB Storage(64GB eMMC+128GB Micro SD), 1 Year Office 365, Webcam, HDMI, WiFi, USB-A&C, Win 11 S",
+          "price": 212,
+          "image": "/images/laptop-2.webp"
+        },
+        {
+          "id": 7,
+          "name": "MSI PRO MP251 E2",
+          "description": "MSI PRO MP251 E2 24.5-inch IPS 1920 x 1080 (FHD) Gaming Office Monitor, 120Hz, Adaptive-Synch, HDR Ready, HDMI, VGA Port, Display Port,VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 109,
+          "image": "/assets/images/monitor-1.webp"
+        },
+        {
+          "id": 8,
+          "name": "MSI PRO MP253",
+          "description": "MSI PRO MP253 24.5-inch IPS 1920 x 1080 (FHD) Computer Monitor, 100Hz, Adaptive-Sync, HDMI, DP Port, VGA Port, VESA Mountable, Tilt, Speaker, 1ms, Black",
+          "price": 90,
+          "image": "/assets/images/monitor-2.webp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Home Essential",
+      "products": [
+        {
+          "id": 1,
+          "name": "LEVOIT Air Purifier",
+          "description": "LEVOIT Air Purifier for Home Allergies Pets Hair in Bedroom, Covers Up to 1095 ft² by 45W High Torque Motor, 3-in-1 Filter with HEPA sleep mode, Remove Dust Smoke Pollutants Odor, Core300-P, White",
+          "price": 150,
+          "image": "/images/home-1.webp"
+        },
+        {
+          "id": 2,
+          "name": "O-Cedar",
+          "description": "O-Cedar EasyWring Microfiber Spin Mop & Bucket Floor Cleaning System + 2 Extra Refills, Red/Gray.",
+          "price": 39,
+          "image": "/images/home-2.webp"
+        },
+        {
+          "id": 3,
+          "name": "BISSELL Steam ",
+          "description": "BISSELL Steam Shot OmniReach Handheld Steam Cleaner.",
+          "price": 49,
+          "image": "/images/home-3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Lusper Weight Bench ",
+          "description": "Lusper Weight Bench for Home Gym, Adjustable and Foldable 700LB Weight Bench, Multi-Purpose Workout Bench for Bench Press Sit up Incline Flat Decline.",
+          "price": 69,
+          "image": "/images/home-4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Veken ",
+          "description": "Veken 11.8 Inch Rectangle High Pressure Rain Shower Head Combo with Extension Arm- Wide Showerhead with 5 Handheld Water Spray - Adjustable Dual Showerhead with Anti-Clog Nozzles - Silver Chrome",
+          "price": 62,
+          "image": "/images/home-5.webp"
+        },
+        {
+          "id": 6,
+          "name": "DORESshop LED Night Light ",
+          "description": "DORESshop LED Night Light, Night Lights Plug Into Wall [2 Pack] with Dusk-to-Dawn Sensor, Dimmable Nightlights, Adjustable Brightness for Bathroom, Hallway, Bedroom,Kids Room,Stairway,Soft White",
+          "price": 9,
+          "image": "/images/home-6.webp"
+        },
+        {
+          "id": 7,
+          "name": "Candle Warmer Lamp",
+          "description": "Candle Warmer Lamp, Adjustable Height Candle Warmer, Timer, Dimmable, Home Decor, Wax Melts Warmer for Jar Candles with 2 Bulbs, Black",
+          "price": 24,
+          "image": "/assets/images/home-7.webp"
+        },
+        {
+          "id": 8,
+          "name": "XXXFLOWER",
+          "description": "XXXFLOWER Plant Terrarium with Wooden Stand, Air Planter Bulb Glass Vase Metal Swivel Holder Retro Tabletop for Hydroponics Home Garden Office Decoration - 3 Bulb Vase",
+          "price": 18,
+          "image": "/assets/images/home-8.webp"
+        },
+        {
+          "id": 1,
+          "name": "LEVOIT Air Purifier",
+          "description": "LEVOIT Air Purifier for Home Allergies Pets Hair in Bedroom, Covers Up to 1095 ft² by 45W High Torque Motor, 3-in-1 Filter with HEPA sleep mode, Remove Dust Smoke Pollutants Odor, Core300-P, White",
+          "price": 150,
+          "image": "/images/home-1.webp"
+        },
+        {
+          "id": 2,
+          "name": "O-Cedar",
+          "description": "O-Cedar EasyWring Microfiber Spin Mop & Bucket Floor Cleaning System + 2 Extra Refills, Red/Gray.",
+          "price": 39,
+          "image": "/images/home-2.webp"
+        },
+        {
+          "id": 3,
+          "name": "BISSELL Steam ",
+          "description": "BISSELL Steam Shot OmniReach Handheld Steam Cleaner.",
+          "price": 49,
+          "image": "/images/home-3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Lusper Weight Bench ",
+          "description": "Lusper Weight Bench for Home Gym, Adjustable and Foldable 700LB Weight Bench, Multi-Purpose Workout Bench for Bench Press Sit up Incline Flat Decline.",
+          "price": 69,
+          "image": "/images/home-4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Veken ",
+          "description": "Veken 11.8 Inch Rectangle High Pressure Rain Shower Head Combo with Extension Arm- Wide Showerhead with 5 Handheld Water Spray - Adjustable Dual Showerhead with Anti-Clog Nozzles - Silver Chrome",
+          "price": 62,
+          "image": "/images/home-5.webp"
+        },
+        {
+          "id": 6,
+          "name": "DORESshop LED Night Light ",
+          "description": "DORESshop LED Night Light, Night Lights Plug Into Wall [2 Pack] with Dusk-to-Dawn Sensor, Dimmable Nightlights, Adjustable Brightness for Bathroom, Hallway, Bedroom,Kids Room,Stairway,Soft White",
+          "price": 9,
+          "image": "/images/home-6.webp"
+        },
+        {
+          "id": 7,
+          "name": "Candle Warmer Lamp",
+          "description": "Candle Warmer Lamp, Adjustable Height Candle Warmer, Timer, Dimmable, Home Decor, Wax Melts Warmer for Jar Candles with 2 Bulbs, Black",
+          "price": 24,
+          "image": "/assets/images/home-7.webp"
+        },
+        {
+          "id": 8,
+          "name": "XXXFLOWER",
+          "description": "XXXFLOWER Plant Terrarium with Wooden Stand, Air Planter Bulb Glass Vase Metal Swivel Holder Retro Tabletop for Hydroponics Home Garden Office Decoration - 3 Bulb Vase",
+          "price": 18,
+          "image": "/assets/images/home-8.webp"
+        },
+        {
+          "id": 1,
+          "name": "LEVOIT Air Purifier",
+          "description": "LEVOIT Air Purifier for Home Allergies Pets Hair in Bedroom, Covers Up to 1095 ft² by 45W High Torque Motor, 3-in-1 Filter with HEPA sleep mode, Remove Dust Smoke Pollutants Odor, Core300-P, White",
+          "price": 150,
+          "image": "/images/home-1.webp"
+        },
+        {
+          "id": 2,
+          "name": "O-Cedar",
+          "description": "O-Cedar EasyWring Microfiber Spin Mop & Bucket Floor Cleaning System + 2 Extra Refills, Red/Gray.",
+          "price": 39,
+          "image": "/images/home-2.webp"
+        },
+        {
+          "id": 3,
+          "name": "BISSELL Steam ",
+          "description": "BISSELL Steam Shot OmniReach Handheld Steam Cleaner.",
+          "price": 49,
+          "image": "/images/home-3.webp"
+        },
+        {
+          "id": 4,
+          "name": "Lusper Weight Bench ",
+          "description": "Lusper Weight Bench for Home Gym, Adjustable and Foldable 700LB Weight Bench, Multi-Purpose Workout Bench for Bench Press Sit up Incline Flat Decline.",
+          "price": 69,
+          "image": "/images/home-4.webp"
+        },
+        {
+          "id": 5,
+          "name": "Veken ",
+          "description": "Veken 11.8 Inch Rectangle High Pressure Rain Shower Head Combo with Extension Arm- Wide Showerhead with 5 Handheld Water Spray - Adjustable Dual Showerhead with Anti-Clog Nozzles - Silver Chrome",
+          "price": 62,
+          "image": "/images/home-5.webp"
+        },
+        {
+          "id": 6,
+          "name": "DORESshop LED Night Light ",
+          "description": "DORESshop LED Night Light, Night Lights Plug Into Wall [2 Pack] with Dusk-to-Dawn Sensor, Dimmable Nightlights, Adjustable Brightness for Bathroom, Hallway, Bedroom,Kids Room,Stairway,Soft White",
+          "price": 9,
+          "image": "/images/home-6.webp"
+        },
+        {
+          "id": 7,
+          "name": "Candle Warmer Lamp",
+          "description": "Candle Warmer Lamp, Adjustable Height Candle Warmer, Timer, Dimmable, Home Decor, Wax Melts Warmer for Jar Candles with 2 Bulbs, Black",
+          "price": 24,
+          "image": "/assets/images/home-7.webp"
+        },
+        {
+          "id": 8,
+          "name": "XXXFLOWER",
+          "description": "XXXFLOWER Plant Terrarium with Wooden Stand, Air Planter Bulb Glass Vase Metal Swivel Holder Retro Tabletop for Hydroponics Home Garden Office Decoration - 3 Bulb Vase",
+          "price": 18,
+          "image": "/assets/images/home-8.webp"
+        },
+        {
+          "id": 5,
+          "name": "Veken ",
+          "description": "Veken 11.8 Inch Rectangle High Pressure Rain Shower Head Combo with Extension Arm- Wide Showerhead with 5 Handheld Water Spray - Adjustable Dual Showerhead with Anti-Clog Nozzles - Silver Chrome",
+          "price": 62,
+          "image": "/images/home-5.webp"
+        },
+        {
+          "id": 6,
+          "name": "DORESshop LED Night Light ",
+          "description": "DORESshop LED Night Light, Night Lights Plug Into Wall [2 Pack] with Dusk-to-Dawn Sensor, Dimmable Nightlights, Adjustable Brightness for Bathroom, Hallway, Bedroom,Kids Room,Stairway,Soft White",
+          "price": 9,
+          "image": "/images/home-6.webp"
+        },
+        {
+          "id": 7,
+          "name": "Candle Warmer Lamp",
+          "description": "Candle Warmer Lamp, Adjustable Height Candle Warmer, Timer, Dimmable, Home Decor, Wax Melts Warmer for Jar Candles with 2 Bulbs, Black",
+          "price": 24,
+          "image": "/assets/images/home-7.webp"
+        },
+        {
+          "id": 8,
+          "name": "XXXFLOWER",
+          "description": "XXXFLOWER Plant Terrarium with Wooden Stand, Air Planter Bulb Glass Vase Metal Swivel Holder Retro Tabletop for Hydroponics Home Garden Office Decoration - 3 Bulb Vase",
+          "price": 18,
+          "image": "/assets/images/home-8.webp"
+        },
+        {
+          "id": 8,
+          "name": "XXXFLOWER",
+          "description": "XXXFLOWER Plant Terrarium with Wooden Stand, Air Planter Bulb Glass Vase Metal Swivel Holder Retro Tabletop for Hydroponics Home Garden Office Decoration - 3 Bulb Vase",
+          "price": 18,
+          "image": "/assets/images/home-8.webp"
+        },
+        {
+          "id": 5,
+          "name": "Veken ",
+          "description": "Veken 11.8 Inch Rectangle High Pressure Rain Shower Head Combo with Extension Arm- Wide Showerhead with 5 Handheld Water Spray - Adjustable Dual Showerhead with Anti-Clog Nozzles - Silver Chrome",
+          "price": 62,
+          "image": "/images/home-5.webp"
+        }
+      ]
+    }
+  ]
+}

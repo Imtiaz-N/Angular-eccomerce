@@ -1,0 +1,69 @@
+<div>
+  <div *ngIf="product" class="flex p-8 mt-28 mx-auto w-11/12">
+    <div class="w-1/2 pr-4">
+      <div
+        class="bg-white shadow-md rounded-lg border py-8 border-gray-100 overflow-hidden w-11/12"
+      >
+        <img
+          [src]="product.image"
+          alt="{{ product.name }}"
+          class="object-contain h-64 w-full rounded-lg"
+        />
+      </div>
+    </div>
+    <div class="border-l-2 border-gray-300 mx-4"></div>
+    <div class="w-1/2 pl-4 flex flex-col">
+      <div>
+        <h1 class="text-2xl font-bold mb-2 font-sans">{{ product.name }}</h1>
+        <p class="text-lg mb-0 font-sans">{{ product.description }}</p>
+      </div>
+
+      <div class="flex space-x-4 p-4 mr-16 mb-4">
+        <div
+          class="bg-gray-100 text-sm text-black text-center px-1 py-2 font-semibold font-Rajdhai flex-1"
+        >
+          Regular Price: ${{ product.price }}
+        </div>
+
+        <div
+          class="bg-gray-100 text-sm text-black text-center px-1 py-2 font-semibold font-Rajdhai flex-1"
+        >
+          Status: In Stock
+        </div>
+
+        <div
+          class="bg-gray-100 text-sm text-black text-center px-1 py-2 font-semibold font-Rajdhai flex-1"
+        >
+          Product Code: A-4329
+        </div>
+      </div>
+      <div class="flex space-x-5 ml-4">
+        <div
+          class="quantity flex items-center gap-1 border border-yellow-800 rounded py-1 px-1"
+        >
+          <button class="bg-gray-200 text-xl px-2 py-1 rounded-sm">-</button>
+          <input
+            type="number"
+            class="w-12 text-center text-xl p-1 border rounded-sm"
+          />
+          <button class="bg-gray-200 px-2 py-1 text-xl rounded-sm">+</button>
+        </div>
+        <button
+          class="text-sm bg-cyan-800 text-white px-8 rounded hover:bg-cyan-950"
+          (click)="addToCart(product)"
+        >
+          Add to Cart
+        </button>
+
+        <button
+          class="text-sm border bg-white text-cyan-800 border-cyan-800 px-9 font-sans rounded hover:bg-gray-100"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="text-center font-sans text-2xl mt-8">
+    <h2>Realted Products</h2>
+  </div>
+</div>

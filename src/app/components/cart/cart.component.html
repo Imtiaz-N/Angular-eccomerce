@@ -1,0 +1,58 @@
+<section
+  class="cart-page w-full max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg mt-48 flex"
+>
+  <div class="w-4/5 pr-6">
+    <h1 class="font-semibold text-lg ml-4 mb-2 font-serif text-gray-700">
+      An overview of your order
+    </h1>
+    <ng-container *ngIf="cartItems.length; else emptyCart">
+      <app-cart-item
+        *ngFor="let item of cartItems"
+        [item]="item"
+        (update)="updateCartItem($event)"
+        (remove)="removeCartItem(item.id)"
+      ></app-cart-item>
+      <div
+        class="cart-summary flex justify-between mt-8 items-center border-t pt-4"
+      >
+        <button
+          (click)="clearCart()"
+          class="bg-red-600 text-sm text-white py-2 px-4 rounded hover:bg-red-700"
+        >
+          Clear Cart
+        </button>
+      </div>
+    </ng-container>
+    <ng-template #emptyCart>
+      <p class="text-center text-gray-500 mt-6">Your cart is empty.</p>
+    </ng-template>
+  </div>
+
+  <div class="w-1/5 bg-gray-100 p-4 rounded-lg shadow-md flex flex-col">
+    <div class="mb-4">
+      <h3 class="text-lg font-sans mb-2 text-gray-700">Order details</h3>
+      <div class="flex justify-between text-gray-700">
+        <span class="text-gray-500 text-sm">Subtotal:</span>
+        <span class="text-gray-500 text-sm">{{ subtotal | currency }}</span>
+      </div>
+      <div class="flex justify-between text-gray-700">
+        <span class="text-gray-500 text-sm">Shopping Fee:</span>
+        <span class="text-gray-500 text-sm">{{ shippingFee | currency }}</span>
+      </div>
+      <div class="flex justify-between text-gray-700">
+        <span class="text-gray-500 text-sm">Tax:</span>
+        <span class="text-gray-500 text-sm">{{ tax | currency }}</span>
+      </div>
+      <div class="border-t mt-3 pt-3 flex justify-between text-gray-900">
+        <span class="text-lg text-gray-600">Total:</span>
+        <span class="text-lg text-gray-700">{{ total | currency }}</span>
+      </div>
+    </div>
+    <button
+      (click)="navigateToCheckout()"
+      class="bg-gray-500 text-white text-sm py-1 px-2 rounded hover:bg-gray-900"
+    >
+      Checkout
+    </button>
+  </div>
+</section>

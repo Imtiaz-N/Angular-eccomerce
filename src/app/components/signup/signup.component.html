@@ -1,0 +1,156 @@
+<div
+  class="max-w-md mx-auto mt-28 mb-2 bg-white shadow-lg rounded-lg p-8 space-y-6"
+>
+  <h2 class="font-sans text-gray-800 text-center">Create an Account</h2>
+  <form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="space-y-4">
+    <div class="flex justify-between space-x-2">
+      <div class="relative">
+        <input
+          id="firstname"
+          type="text"
+          placeholder=" "
+          formControlName="firstname"
+          class="block w-full border font-sans border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 peer"
+          (focus)="onFocus('firstname')"
+          (blur)="onBlur('firstname')"
+        />
+        <label
+          [ngClass]="{
+            'absolute left-2 transition-all duration-200 transform px-1 text-gray-500 text-sm': true,
+            'top-2':
+              !fieldFocusState['firstname'] &&
+              !signupForm.get('firstname')?.value,
+            '-top-1 text-gray-700 text-xlx':
+              fieldFocusState['firstname'] || signupForm.get('firstname')?.value
+          }"
+          for="firstname"
+        >
+          First Name
+        </label>
+      </div>
+
+      <div class="relative">
+        <input
+          id="lastname"
+          type="text"
+          placeholder=" "
+          formControlName="lastname"
+          class="block w-full border font-sans border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 peer"
+          (focus)="onFocus('lastname')"
+          (blur)="onBlur('lastname')"
+        />
+        <label
+          [ngClass]="{
+            'absolute left-2 transition-all duration-200 transform px-1 text-gray-500 text-sm': true,
+            'top-2':
+              !fieldFocusState['lastname'] &&
+              !signupForm.get('lastname')?.value,
+            '-top-1 text-gray-700 text-xlx':
+              fieldFocusState['lastname'] || signupForm.get('lastname')?.value
+          }"
+          for="lastname"
+        >
+          Last Name
+        </label>
+      </div>
+    </div>
+
+    <div class="relative">
+      <input
+        id="email"
+        type="email"
+        placeholder=" "
+        formControlName="email"
+        class="block w-full border font-sans border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 peer"
+        (focus)="onFocus('email')"
+        (blur)="onBlur('email')"
+      />
+      <label
+        [ngClass]="{
+          'absolute left-2 transition-all duration-200 transform px-1 text-gray-500 text-sm': true,
+          'top-2': !fieldFocusState['email'] && !signupForm.get('email')?.value,
+          '-top-1 text-gray-700 text-xlx':
+            fieldFocusState['email'] || signupForm.get('email')?.value
+        }"
+        for="email"
+      >
+        Email
+      </label>
+    </div>
+
+    <div class="relative">
+      <input
+        id="password"
+        type="password"
+        placeholder=" "
+        formControlName="password"
+        class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 peer"
+        (focus)="onFocus('password')"
+        (blur)="onBlur('password')"
+      />
+      <label
+        [ngClass]="{
+          'absolute left-2 transition-all duration-200 transform px-1 text-gray-500 text-sm': true,
+          'top-2':
+            !fieldFocusState['password'] && !signupForm.get('password')?.value,
+          '-top-1 text-gray-700 text-xlx':
+            fieldFocusState['password'] || signupForm.get('password')?.value
+        }"
+        for="password"
+      >
+        Password
+      </label>
+      <div
+        *ngIf="
+          signupForm.get('password')?.invalid &&
+          signupForm.get('password')?.touched
+        "
+      >
+        Password is required and must be at least 6 characters.
+      </div>
+    </div>
+    <div class="relative">
+      <input
+        id="confirmPassword"
+        type="password"
+        placeholder=" "
+        formControlName="confirmPassword"
+        class="block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:border-gray-700 peer"
+        (focus)="onFocus('confirmPassword')"
+        (blur)="onBlur('confirmPassword')"
+      />
+      <label
+        [ngClass]="{
+          'absolute left-2 transition-all duration-200 transform px-1 text-gray-500 text-sm': true,
+          'top-2':
+            !fieldFocusState['confirmPassword'] &&
+            !signupForm.get('confirmPassword')?.value,
+          '-top-1 text-gray-700':
+            fieldFocusState['confirmPassword'] ||
+            signupForm.get('confirmPassword')?.value
+        }"
+        for="confirmPassword"
+      >
+        Confirm Password
+      </label>
+      <!-- Error message for password mismatch -->
+      <div
+        *ngIf="
+        signupForm.errors?.['passwordMismatch'] &&
+        signupForm.get('confirmPassword')?.touched
+      "
+        class="text-red-500 text-sm mt-1"
+      >
+        Passwords do not match.
+      </div>
+    </div>
+
+    <button
+      type="submit"
+      class="w-full bg-blue-500 text-white rounded-md py-2 hover:bg-blue-600 disabled:bg-gray-300 disabled:text-gray-400 disabled:cursor-not-allowed transition-colors duration-200"
+      [disabled]="!signupForm.valid"
+    >
+      Sign Up
+    </button>
+  </form>
+</div>

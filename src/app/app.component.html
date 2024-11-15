@@ -1,0 +1,17 @@
+<div class="flex flex-col min-h-screen">
+  <div class="fixed top-0 left-0 w-full z-10">
+    <app-navbar></app-navbar>
+    <app-link></app-link>
+  </div>
+
+  <div [ngClass]="paddingClass" class="flex-grow overflow-y-auto">
+    <router-outlet></router-outlet>
+  </div>
+
+  <ng-container *ngIf="showFooter; else smallFooter" class="mt-2">
+    <app-footer></app-footer>
+  </ng-container>
+  <ng-template #smallFooter>
+    <app-sm-footer></app-sm-footer>
+  </ng-template>
+</div>
