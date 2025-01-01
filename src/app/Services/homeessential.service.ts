@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+const BASE_URL = 'https://json-serve-q964.onrender.com';
 interface Product {
   id: number;
   name: string;
@@ -19,7 +20,7 @@ interface Category {
   providedIn: 'root',
 })
 export class HomeessentialService {
-  private apiUrl = 'http://localhost:3000/categories';
+  private apiUrl = `${BASE_URL}/categories`;
 
   constructor(private http: HttpClient) {}
 
